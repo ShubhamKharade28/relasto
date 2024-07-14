@@ -1,4 +1,3 @@
-'use client';
 import Image from "next/image";
 import { LiaCopyrightSolid } from "react-icons/lia";
 import { CiFacebook } from "react-icons/ci";
@@ -25,11 +24,11 @@ function Footer() {
 						info@gmail.com	
 					</span>
 					<span className="flex gap-4 text-2xl font-bold orange-text">
-						<CiFacebook />
-						<SlSocialTwitter />
-						<FaInstagram />
-						<AiOutlineLinkedin />
-						<PiYoutubeLogo />
+						<Link href="#" className="hover:scale-90 transition-all duration-300 ease"><CiFacebook /></Link>
+						<Link href="#" className="hover:scale-90 transition-all duration-300 ease"><SlSocialTwitter/></Link>
+						<Link href="#" className="hover:scale-90 transition-all duration-300 ease"><FaInstagram /></Link>
+						<Link href="#" className="hover:scale-90 transition-all duration-300 ease"><AiOutlineLinkedin/></Link>
+						<Link href="#" className="hover:scale-90 transition-all duration-300 ease"><PiYoutubeLogo/></Link>
 					</span>
 				</div>
 				<div className="flex w-full items-start justify-between px-20 py-10">
@@ -64,11 +63,11 @@ function List({title, items}){
 		<ul className="flex flex-col gap-5 text-[#222]">
 			<h4 className="text-xl font-bold">{title}</h4>
 			{items.map((item) => 
-			<li className="font-semibold">
+			<li className="font-semibold hover:opacity-70" key={item}>
 				<Link href="#">{item}</Link>
 			</li>)}
 		</ul>
 	)
 }
 
-export default Footer
+export default Footer;

@@ -39,3 +39,9 @@
 .orange-text {
   color: #fd650b;
 }
+
+.black-btn {
+  @apply hover:bg-gray-800 font-semibold bg-black text-gray-100;
+}
+
+/* orange-shadow: #fc650a */

@@ -13,13 +13,13 @@ const NavBar = () => {
 			alt="relasto"
 			className="h-10 w-auto"
 		/>
-		<ul className="flex items-center gap-10">
-			<li>Home</li>
-			<li>Listing</li>
-			<li>Agents</li>
-			<li>Property</li>
-			<li>Blog</li>
-		</ul>
+		<div className="flex items-center gap-10">
+			<Link href="/">Home</Link>
+			<Link href="/listing">Listing</Link>
+			<Link href="/agents">Agents</Link>
+			<Link href="/property">Property</Link>
+			<Link href="/blog">Blog</Link>
+		</div>
 		<div className="flex gap-8">
 			<Link className="flex items-center gap-2 text-lg"
 				href="#"

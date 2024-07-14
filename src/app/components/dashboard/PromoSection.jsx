@@ -1,4 +1,3 @@
-'use client';
 import { BiDollarCircle } from "react-icons/bi";
 import { BiMapPin } from "react-icons/bi";
 import { PiFire, PiSmileySticker } from "react-icons/pi";
