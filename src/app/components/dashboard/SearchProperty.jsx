@@ -39,15 +39,15 @@ function SearchProperty() {
 		>
 			<div className="w-full flex items-center justify-between text-center gap-3 font-semibold mb-3">
 				<span
-					className={`${purposeIdx == 1 ? 'bg-black text-white' : 'bg-gray-300 text-black'} rounded-lg w-full py-3`}
+					className={`${purposeIdx == 1 ? 'bg-black text-white' : 'bg-gray-300 text-black'} cursor-pointer rounded-lg w-full py-3`}
 					onClick={() => setPurposeIdx(1)}
 				>Buy</span>
 				<span
 					onClick={() => setPurposeIdx(2)}
-					className={`${purposeIdx == 2 ? 'bg-black text-white' : 'bg-gray-300 text-black'} rounded-lg w-full py-3`}
+					className={`${purposeIdx == 2 ? 'bg-black text-white' : 'bg-gray-300 text-black'} cursor-pointer rounded-lg w-full py-3`}
 				>Sell</span>
 				<span
-					className={`${purposeIdx == 3 ? 'bg-black text-white' : 'bg-gray-300 text-black'} rounded-lg w-full py-3`}
+					className={`${purposeIdx == 3 ? 'bg-black text-white' : 'bg-gray-300 text-black'} cursor-pointer rounded-lg w-full py-3`}
 					onClick={() => setPurposeIdx(3)}
 				>Rent</span>
 			</div>

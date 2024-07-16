@@ -4,6 +4,8 @@ import aboutusTopImg from '@/assets/aboutus-top.jpg';
 import PromoSection from "@/app/components/dashboard/PromoSection";
 import NoteFromFounders from "@/app/components/aboutus/NoteFromFounders";
 import OurVision from "@/app/components/aboutus/OurVision";
+import RelastoTeamMembers from "@/app/components/aboutus/RelastoTeam";
+import Footer from "@/app/components/Footer";
 
 const AboutUs = () => {
     return (
@@ -25,6 +27,8 @@ const AboutUs = () => {
             <PromoSection />
             <NoteFromFounders />
             <OurVision />
+            <RelastoTeamMembers/>
+            <Footer/>
         </main>
     )
 }
