@@ -1,6 +1,8 @@
 
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+import NewsAndConsult from "./components/aboutus/NewsAndConsult";
+import CommentSection from "./components/dashboard/CommentSection";
 import FindPropertySection from "./components/dashboard/FindPropertySection";
 import GetStartedSection from "./components/dashboard/GetStartedSection";
 import GetStartedTwo from "./components/dashboard/GetStartedTwo";
@@ -16,6 +18,8 @@ const RelastoHome = () => {
 			<PromoSection />
 			<GetStartedTwo />
 			<LearnMoreSection />
+			<CommentSection />
+			<NewsAndConsult />
 			<Footer />
 		</main>
 	);

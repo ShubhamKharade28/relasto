@@ -16,6 +16,8 @@
   box-sizing: border-box;
 }
 
+input { outline: none; }
+
 .orange-bg-0 {
   background-color: #fff7f0;
 }
@@ -38,6 +40,10 @@
 
 .orange-text {
   color: #fd650b;
+}
+
+.orange-text-1 {
+  color:  #ff8138;
 }
 
 .black-btn {

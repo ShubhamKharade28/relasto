@@ -6,6 +6,7 @@ import NoteFromFounders from "@/app/components/aboutus/NoteFromFounders";
 import OurVision from "@/app/components/aboutus/OurVision";
 import RelastoTeamMembers from "@/app/components/aboutus/RelastoTeam";
 import Footer from "@/app/components/Footer";
+import NewsAndConsult from "@/app/components/aboutus/NewsAndConsult";
 
 const AboutUs = () => {
     return (
@@ -28,6 +29,7 @@ const AboutUs = () => {
             <NoteFromFounders />
             <OurVision />
             <RelastoTeamMembers/>
+            <NewsAndConsult />
             <Footer/>
         </main>
     )
