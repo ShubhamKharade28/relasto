@@ -4,12 +4,15 @@ import { useEffect, useState } from 'react';
 import { CiLocationOn } from 'react-icons/ci';
 import { HiSelector } from 'react-icons/hi';
 import { motion } from 'framer-motion';
+import MyMap from './MyMap';
 
 function SearchProperty() {
 	const [purposeIdx, setPurposeIdx] = useState(1);
 	const [propertyType, setPropertyType] = useState('');
 	const [priceRanges, setPriceRanges] = useState([]);
 	const [priceRange, setPriceRange] = useState('');
+	const [showMap, setShowMap] = useState(false);
+	const [cityStreet, setCityStreet] = useState('City/Street');
 
 	const allPropertyTypes = ['Resident Property', 'Commercial Property', 'Industrial Property', 'Agriculture Property'];
 	const allPriceRanges = [
@@ -52,10 +55,13 @@ function SearchProperty() {
 				>Rent</span>
 			</div>
 			<div className="flex flex-col gap-4 w-full">
-				<span className="flex justify-between items-center py-3 px-5 text-gray-500 border border-gray-300 rounded-lg">
-					<span>City/Street</span>
-					<CiLocationOn />
-				</span>
+				<button 
+					className="relative flex justify-between items-center py-3 px-5 text-gray-500 border border-gray-300 rounded-lg"
+				>
+					<span onClick={() => setShowMap(true)}>{cityStreet}</span>
+					<CiLocationOn onClick={() => setShowMap(true)}/>
+					{showMap && <MyMap closeMap={() => setShowMap(false)} setCityStreet={setCityStreet}/>}
+				</button>
 				<CustomSelect 
 					selectTitle="Property Type"
 					selectList={allPropertyTypes}
